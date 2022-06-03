@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js" defer></script>
+    <title>Rock scissors paper</title>
+</head>
+<body>
+  <div class="container">
+   <header>
+       <h1>Welcome to <i class="fa-regular fa-hand-back-fist"></i> Rock <i class="fa-regular fa-hand-scissors"></i> Scissors <i class="fa-regular fa-hand"></i> Paper game!</h1>
+
+       <div class="score-board">
+           <h3>Score board</h3>
+           <div class="player-score">
+               <p>Player: <span id="player-score"></span></p>
+           </div>
+           <div class="computer-score">
+                <p>Computer: <span id="computer-score"></span></p>
+           </div>
+       </div>
+
+   </header> 
+    <div class="game-board">
+        <div class="player-side" id="player-side">
+            <div class="player-rock symbol picked-symbol">
+                <img src="images/rock.png" alt="rock">
+            </div>
+            <div class="player-scissors symbol picked-symbol">
+                <img src="images/scissors.png" alt="scissors">
+            </div>
+            <div class="player-paper symbol picked-symbol">
+                <img src="images/paper.png" alt="paper">
+            </div>
+        </div>
+
+        <button>START</button>
+
+        <div class="player-side" id="computer-side">
+            <div class="computer-rock symbol-pc computerSymbol">
+                <img src="images/rock.png" alt="paper">
+            </div>
+            <div class="computer-scissors symbol-pc computerSymbol">
+                <img src="images/scissors.png" alt="rock">
+            </div>
+            <div class="computer-paper symbol-pc computerSymbol">
+                <img src="images/paper.png" alt="scissors">
+            </div>
+        </div>
+       <div class="picker">
+            <h2>Computer pick: <span class="pick"></span></h2>
+       </div> 
+        
+    </div>
+</div>
+</body>
+</html>
