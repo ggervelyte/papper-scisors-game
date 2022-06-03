@@ -9,6 +9,7 @@
 body {
     font-family: roboto mono;
     background: #212123;
+
 }
 
 .container {
@@ -17,6 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow: hidden;
+
 }
 
 header {
@@ -142,3 +145,31 @@ button:hover {
     font-size: 1em;
 }
 
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 0.7em;
+    }
+    .score-board {
+        margin-top: 15px !important;
+        padding: 15px !important;
+    }
+
+    .score-board h3, p {
+        font-size: 0.7em;
+        line-height: 15px;
+    }
+
+    .player-side .symbol img {
+        max-width: 45% !important;
+        height: 110px;
+    }
+
+    .player-side .symbol-pc img {
+        max-width: 45% !important;
+        height: 110px;
+    }
+
+    button {
+        margin: 5px;
+    }
+}
